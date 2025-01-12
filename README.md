@@ -119,7 +119,7 @@ To generate images, use the `@bot image` command followed by your prompt. Choose
 
 Example:
 ```bash
-@bot image MidJourney "A futuristic cityscape"
+@bot image A futuristic cityscape
 ```
 
 ---
