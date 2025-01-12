@@ -94,12 +94,12 @@ To get started with the OpenDevFlow Chatbot v2, follow these simple steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/odf-chatbot-v2.git
+   git clone https://github.com/OpenDevsFlow/ChatBot-2.0
    ```
 
 2. **Install dependencies:**
    ```bash
-   cd odf-chatbot-v2
+   cd ChatBot-2.0
    npm install
    ```
 
@@ -115,11 +115,11 @@ To get started with the OpenDevFlow Chatbot v2, follow these simple steps:
 
 ## 🎨 Image Generation
 
-To generate images, use the `@user image` command followed by your prompt. Choose from a variety of models for different styles and outputs!
+To generate images, use the `@bot image` command followed by your prompt. Choose from a variety of models for different styles and outputs!
 
 Example:
 ```bash
-@user image MidJourney "A futuristic cityscape"
+@bot image MidJourney "A futuristic cityscape"
 ```
 
 ---
