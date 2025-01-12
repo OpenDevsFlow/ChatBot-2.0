@@ -35,9 +35,7 @@ function shouldProcess(message) {
   const prompt = message.content.replace(`<@${client.user.id}>`, "").trim();
 
   return (
-    (message.mentions.has(client.user) && !message.mentions.everyone && !message.mentions.here) ||
-    isImageRequest(prompt) ||
-    isTTSRequest(prompt)
+    (message.mentions.has(client.user) && !message.mentions.everyone && !message.mentions.here)
   );
 }
 
@@ -63,11 +61,11 @@ client.on("messageCreate", async (message) => {
   try {
     message.channel.sendTyping();
 
-    if (isImageRequest(prompt)) {
+    if (shouldProcess(message) && isImageRequest(prompt)) {
       const response = await NextChat.imagine(prompt, { model: "mageai" });
       const attachment = new AttachmentBuilder(Buffer.from(response, "base64"), { name: "image.png" });
       await message.reply({ content: "Generated Image:", files: [attachment] });
-    } else if (isTTSRequest(prompt)) {
+    } else if (shouldProcess(message) && isTTSRequest(prompt)) {
       const response = await NextChat.tts(prompt.replace(/^tts\b/i, "").trim());
       const attachment = new AttachmentBuilder(Buffer.from(response, "base64"), { name: "audio.mp3" });
       await message.reply({ content: "Generated Audio:", files: [attachment] });
