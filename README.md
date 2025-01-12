@@ -25,15 +25,7 @@ Here’s a list of some of the chatbot models available:
 
 - **Gpt4o**
 - **Gemini**
-- **Custom Ai**
-- **Coral AI**
-- **Rest Conversation**
-- **Chat Coral**
-- **Liner Pro**
 - **Llama3 8b**
-- **Mixtral**
-- **Blackbox**
-- **Cloud3**
 - **Llama Vision**
 - **Gemma2 9B**
 - **Gemma 7B**
@@ -46,15 +38,6 @@ Here’s a list of some of the chatbot models available:
 - **Llama3 11B**
 - **Llama3 90B**
 - **Llama Guard**
-- **Llama3 70B 8192**
-- **Llama3 8B 8192**
-- **Neutral 7b**
-- **Tinyllama 1b**
-- **Zephyr 7b beta**
-- **AnyAi**
-- **Deepseek Coder**
-- **SqlCoder 7b**
-- **Phi 2**
 
 ---
 
@@ -62,29 +45,10 @@ Here’s a list of some of the chatbot models available:
 
 These are the cutting-edge models used for generating images:
 
+- **Prodia**
 - **Animagen**
-- **Niji**
+- **Mageai**
 - **XL3**
-- **XL**
-- **Flux Schnell**
-- **FluxDev**
-- **MidJourney**
-- **MidJourney (2)**
-- **MidJourney (3)**
-- **Gen (2)**
-- **Cyberpunk**
-- **Gen (3)**
-- **Generate**
-- **Pixel Art**
-- **Magic Studio**
-- **Flux Realism**
-- **Flux V4**
-- **Flux Pixel**
-- **Flux Anime**
-- **Flux Disney**
-- **Flux AnyDark**
-- **Flux 4o**
-- **Flux 3D**
 
 ---
 
@@ -115,7 +79,7 @@ To get started with the OpenDevFlow Chatbot v2, follow these simple steps:
 
 ## 🎨 Image Generation
 
-To generate images, use the `@bot image` command followed by your prompt. Choose from a variety of models for different styles and outputs!
+To generate images, use the `@bot image` command followed by your prompt.
 
 Example:
 ```bash
